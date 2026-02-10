@@ -1,15 +1,11 @@
 # KarlHorning.dev — Developer Portfolio
 
----
-
 ![GitHub Pages Deploy](https://img.shields.io/github/deployments/Karl-Horning/Karl-Horning.github.io/github-pages?label=GitHub%20Pages\&logo=github)
 ![Lighthouse Performance 99](https://img.shields.io/badge/Lighthouse_Performance-99-brightgreen)
 ![Lighthouse Accessibility 100](https://img.shields.io/badge/Lighthouse_Accessibility-100-brightgreen)
 ![Lighthouse Best Practices 100](https://img.shields.io/badge/Lighthouse_Best_Practices-100-blue)
 ![Lighthouse SEO 100](https://img.shields.io/badge/Lighthouse_SEO-100-blueviolet)
 ![MIT License](https://img.shields.io/badge/License-MIT-green)
-
----
 
 ## Table of Contents
 
@@ -36,8 +32,6 @@
   - [Licence](#licence)
   - [Author](#author)
 
----
-
 ## Overview
 
 **KarlHorning.dev** is my centralised developer portfolio — a single, accessible [Next.js](https://nextjs.org/) build that unifies my **projects**, **blog**, and **CMALT portfolio** into one modular, maintainable codebase.
@@ -50,8 +44,6 @@ The site reflects my approach to professional front-end development:
 
 Migrating from Eleventy to Next.js reduced maintenance by roughly **2-3 hours per month**, while improving accessibility, scalability, and performance.
 
----
-
 ## Design Approach
 
 The design emphasises **clarity**, **readability**, and **inclusivity** over visual excess.
@@ -63,8 +55,6 @@ The design emphasises **clarity**, **readability**, and **inclusivity** over vis
 - **Interaction:** Fully keyboard- and screen reader-accessible
 
 The overall aesthetic aims for calm professionalism while meeting **WCAG 2.2 AA** standards.
-
----
 
 ## Accessibility & Performance
 
@@ -91,13 +81,9 @@ Accessibility and performance are tested continuously during development and dep
   - Best Practices: 100
   - SEO: 100
 
----
-
 ## Screenshot
 
 ![Homepage screenshot](public/img/projects/karlhorning-dev.webp)
-
----
 
 ## Tech Stack
 
@@ -111,8 +97,6 @@ Accessibility and performance are tested continuously during development and dep
 - **Accessibility:** WCAG-aware, semantic components
 - **CI/CD:** GitHub Actions (linting, type checks, build, and export)
 
----
-
 ## Installation
 
 ```bash
@@ -120,8 +104,6 @@ git clone https://github.com/Karl-Horning/Karl-Horning.github.io.git
 cd Karl-Horning.github.io
 npm install
 ```
-
----
 
 ## Scripts
 
@@ -132,8 +114,6 @@ npm install
 | `npm start`          | Serve static build locally                         |
 | `npm run lint`       | Run ESLint checks                                  |
 | `npm run build:data` | Regenerate JSON data (projects, posts, CMALT, RSS) |
-
----
 
 ## Project Structure
 
@@ -148,16 +128,12 @@ src/
 
 The architecture follows a **clear separation of concerns** between content, types, and logic — designed for scalability and maintainability.
 
----
-
 ## Code Style & Linting
 
 - **ESLint** with `eslint-config-next`
 - **Prettier** with Tailwind CSS plugin
 - **Conventional Commits** (with scopes such as `a11y` and `ux`)
 - **JSDoc** for function and dataset documentation
-
----
 
 ## Tests
 
@@ -195,8 +171,6 @@ Running 7 tests using 1 worker
 
 - **Jest** and **React Testing Library** for UI components
 
----
-
 ## Live Site
 
 **URL:** [karlhorning.dev](https://www.karlhorning.dev)
@@ -210,8 +184,6 @@ Running 7 tests using 1 worker
 | Best Practices | 100    | 100     |
 | SEO            | 100    | 100     |
 
----
-
 ## Roadmap
 
 - [x] Migrate from Eleventy to Next.js
@@ -222,8 +194,6 @@ Running 7 tests using 1 worker
 - [ ] Add Jest coverage
 - [ ] Add privacy-friendly analytics
 
----
-
 ## Further Reading
 
 - [KarlHorning.dev - Building a Modern, Accessible Developer Portfolio](https://www.karlhorning.dev/projects/karlhorning-dev)
@@ -232,13 +202,9 @@ Running 7 tests using 1 worker
 - [Blog](https://www.karlhorning.dev/blog)
 - [Projects](https://www.karlhorning.dev/projects)
 
----
-
 ## Licence
 
 MIT © 2025 Karl Horning
-
----
 
 ## Author
 
