@@ -1,6 +1,6 @@
 import { promises as fs } from "fs";
 import path from "path";
-import { BlogPost } from "@/types";
+import { BlogMeta } from "@/types";
 import { slugify } from "@/lib/helpers";
 
 /**
@@ -14,12 +14,12 @@ import { slugify } from "@/lib/helpers";
  * @param {number} [limit=10] - The number of blog posts to return.
  * @throws Will throw an error if reading or parsing the file fails.
  */
-export async function getBlogPosts(limit: number = 10): Promise<BlogPost[]> {
+export async function getBlogPosts(limit: number = 10): Promise<BlogMeta[]> {
     const all = await getAllBlogPosts();
     return all.slice(0, limit);
 }
 
-let _cache: BlogPost[] | null = null;
+let _cache: BlogMeta[] | null = null;
 
 /**
  * Loads all blog posts from the JSON index, sorted (newest first) and with drafts removed.
@@ -28,7 +28,7 @@ let _cache: BlogPost[] | null = null;
  * @function
  * @returns Resolves to the full list of published blog posts.
  */
-export async function getAllBlogPosts(): Promise<BlogPost[]> {
+export async function getAllBlogPosts(): Promise<BlogMeta[]> {
     if (_cache) return _cache;
 
     const jsonFilePath = path.join(
@@ -38,7 +38,7 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
         "posts.json"
     );
     const jsonData = await fs.readFile(jsonFilePath, "utf-8");
-    const data: BlogPost[] = JSON.parse(jsonData);
+    const data: BlogMeta[] = JSON.parse(jsonData);
 
     // exclude drafts, sort newest → oldest
     _cache = data
@@ -70,7 +70,7 @@ export async function getAllTags(): Promise<string[]> {
  * @param tag - The tag to match (for example, "react").
  * @returns An array of blog posts that include the tag.
  */
-export async function getPostsByTag(tag: string): Promise<BlogPost[]> {
+export async function getPostsByTag(tag: string): Promise<BlogMeta[]> {
     const key = tag.trim().toLowerCase();
     const posts = await getAllBlogPosts();
     return posts.filter((p) => p.topics?.some((t) => slugify(t) === key));
@@ -85,7 +85,7 @@ export async function getPostsByTag(tag: string): Promise<BlogPost[]> {
  * @returns A slice plus pagination metadata.
  */
 export function paginate(
-    items: BlogPost[],
+    items: BlogMeta[],
     page: number = 1,
     perPage: number = 10
 ) {

@@ -1,4 +1,4 @@
-import type { BlogPost } from "@/types";
+import type { BlogMeta } from "@/types";
 import "server-only";
 
 export const meta = {
@@ -21,4 +21,4 @@ export const meta = {
         "JavaScript",
     ],
     draft: false,
-} as const satisfies BlogPost;
+} as const satisfies BlogMeta;

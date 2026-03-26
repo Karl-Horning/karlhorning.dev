@@ -1,7 +1,7 @@
 import BlogLayout from "@/components/layouts/BlogLayout";
 import { meta } from "./meta";
 import FigureWithCaption from "@/components/ui/FigureWithCaption";
-import { fourHundredResponse, jwtScript } from "./example";
+import { fourHundredResponse, jwtScript } from "./examples";
 import { createMetadata } from "@/lib/helpers";
 import { internalRoutes } from "@/lib/constants/ui";
 

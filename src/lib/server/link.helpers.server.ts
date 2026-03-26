@@ -1,7 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 import { cache } from "react";
-import { BlogPost, CmaltPage, ProjectMeta } from "@/types";
+import { BlogMeta, CmaltPage, ProjectMeta } from "@/types";
 
 /**
  * Minimum shape required for any item used with `createPrevNext`.
@@ -124,12 +124,12 @@ function createPrevNext<T extends HasSlugAndTitle>(
  * Includes only the fields required for linking
  * and minimal display info.
  */
-type BlogListItem = Pick<BlogPost, "slug" | "title" | "description"> & {
+type BlogListItem = Pick<BlogMeta, "slug" | "title" | "description"> & {
     /** Associated topics/tags for the blog post. */
-    topics: BlogPost["topics"];
+    topics: BlogMeta["topics"];
 
     /** Optional thumbnail image for the post. */
-    thumbnail: BlogPost["thumbnail"];
+    thumbnail: BlogMeta["thumbnail"];
 };
 
 /**

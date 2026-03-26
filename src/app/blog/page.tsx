@@ -1,6 +1,6 @@
 import BlogLandingPosts from "@/components/blog/BlogLandingPosts";
 import BlogLandingFooter from "@/components/blog/BlogLandingFooter";
-import { BlogPost } from "@/types";
+import { BlogMeta } from "@/types";
 import PageIntroSplit from "@/components/ui/PageIntroSplit";
 import { icons, internalRoutes } from "@/lib/constants/ui";
 import { createMetadata } from "@/lib/helpers";
@@ -73,7 +73,7 @@ export const dynamic = "force-static";
  */
 export default async function Page() {
     // Fetch metadata for all published blog posts
-    const blogPosts: BlogPost[] = await getBlogPosts();
+    const blogPosts: BlogMeta[] = await getBlogPosts();
 
     return (
         <>

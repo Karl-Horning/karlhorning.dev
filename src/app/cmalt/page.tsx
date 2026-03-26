@@ -3,7 +3,7 @@ import { icons, internalRoutes } from "@/lib/constants/ui";
 import { meta } from "./meta";
 import ContactCta from "@/components/ui/ContactCta";
 import PrevNextButtons from "@/components/ui/PrevNextButtons";
-import CmaltSidebar from "@/components/cmalt/CmaltSidebar.server";
+import CmaltSidebar from "@/components/cmalt/CmaltSidebar";
 import { getPrevNextCmalt } from "@/lib/server";
 import PageIntroSplit from "@/components/ui/PageIntroSplit";
 import { jsonLdCMALT } from "@/lib/constants/site-metadata";

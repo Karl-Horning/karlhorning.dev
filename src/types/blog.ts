@@ -1,6 +1,6 @@
 import { Thumbnail } from "./index";
 
-export type BlogPost = {
+export type BlogMeta = {
     /**
      * The blog post title displayed in the page header.
      */

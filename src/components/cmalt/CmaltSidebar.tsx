@@ -1,5 +1,5 @@
 import { getCmaltNav } from "@/lib/server";
-import CmaltSidebarClient from "./CmaltSidebar.client";
+import CmaltSidebarClient from "./CmaltSidebarClient";
 
 /**
  * Server component that renders the CMALT sidebar navigation.

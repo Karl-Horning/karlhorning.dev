@@ -1,18 +1,18 @@
 import BlogCard from "@/components/ui/BlogCard";
-import { BlogPost } from "@/types";
+import { BlogMeta } from "@/types";
 
 interface BlogLandingPostsProps {
     /**
      * An optional array of blog post metadata to display.
-     * Each post should conform to the {@link BlogPost} type.
+     * Each post should conform to the {@link BlogMeta} type.
      */
-    blogPosts?: BlogPost[];
+    blogPosts?: BlogMeta[];
 }
 
 /**
  * Displays a responsive grid of blog posts.
  *
- * Fetches blog post metadata via `getBlogPosts()` and renders
+ * Fetches blog post metadata via `getBlogMetas()` and renders
  * each entry as a `BlogCard` component. The grid adapts from
  * a single column on mobile to multiple columns on larger screens.
  *
@@ -20,7 +20,7 @@ interface BlogLandingPostsProps {
  * pagination controls.
  *
  * @param {BlogLandingPostsProps} props - Component props.
- * @param {BlogPost[]} [props.blogPosts=[]] - Array of blog posts to render.
+ * @param {BlogMeta[]} [props.blogPosts=[]] - Array of blog posts to render.
  * @returns The main blog posts section with a responsive grid layout.
  */
 export default async function BlogLandingPosts({
