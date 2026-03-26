@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import CmaltSidebar from "@/components/cmalt/CmaltSidebar.server";
+import CmaltSidebar from "@/components/cmalt/CmaltSidebar";
 import ContactCta from "@/components/ui/ContactCta";
 import EntryHeader from "@/components/ui/EntryHeader";
 import { getPrevNextCmalt } from "@/lib/server";
