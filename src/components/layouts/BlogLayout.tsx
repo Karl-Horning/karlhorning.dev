@@ -1,4 +1,4 @@
-import { BlogPost } from "@/types";
+import { BlogMeta } from "@/types";
 import { PropsWithChildren } from "react";
 import EntryHeader from "../ui/EntryHeader";
 import EntryCoverImage from "../ui/EntryCoverImage";
@@ -8,7 +8,7 @@ import PrevNextButtons from "../ui/PrevNextButtons";
 import { getPrevNextBlogPost } from "@/lib/server";
 import ContactCta from "../ui/ContactCta";
 
-type BlogLayoutProps = PropsWithChildren<BlogPost>;
+type BlogLayoutProps = PropsWithChildren<BlogMeta>;
 
 /**
  * Layout component for individual blog posts.

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BlogPost } from "@/types";
+import { BlogMeta } from "@/types";
 import { internalRoutes } from "@/lib/constants/ui";
 import { icons } from "@/lib/constants/ui";
 import ButtonLink from "@/components/ui/ButtonLink";
@@ -41,7 +41,7 @@ export default function BlogCard({
     slug,
     thumbnail,
     topics,
-}: BlogPost) {
+}: BlogMeta) {
     return (
         <article className="card flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md dark:border-slate-800 dark:bg-slate-900">
             <div className="flex flex-col">
