@@ -15,14 +15,24 @@ export const workExperience: WorkExperience[] = [
         jobTitle: "Learning Technologist",
         employer: "Imperial College London",
         location: "Hybrid/London, UK",
-        highlight: "EdTech",
+        highlight: "API Integration",
         description:
-            "LMS evaluation and rollout, API integrations, staff/student adoption.",
+            "Built a Postman API testing framework from OpenAPI specs to validate OAuth2/OIDC identity flows across enterprise LMS platforms; conducted a technical capability audit assessing APIs, integration models, and security for a Tier-1 research university.",
         image: "/img/institutions/imperial-logo.svg",
     },
     {
+        dates: "2021 — 2024",
+        jobTitle: "Full-Stack Software Engineer",
+        employer: "Learnlight",
+        location: "Remote",
+        highlight: "Full-stack",
+        description:
+            "Achieved 10x GraphQL API performance improvement via DataLoader batching; designed custom rate-limiting for SCORM/LTI integrations; integrated Mocha/Postman tests into CI/CD — all within an AWS microservice backend serving 700k+ learners across 180 countries.",
+        image: "/img/institutions/learnlight-logo.svg",
+    },
+    {
         dates: "2021 — Present",
-        jobTitle: "Full-stack Developer",
+        jobTitle: "Full-Stack Developer",
         employer: "Freelance & side projects",
         location: "Remote",
         highlight: "Full-stack",

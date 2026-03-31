@@ -1,8 +1,6 @@
 import { Certification } from "@/types";
-import { certificates, links } from "../cmalt";
+import { links } from "../cmalt";
 
-const { appleTeacherCertificate, celtaCertificate, ptllsCertificate } =
-    certificates;
 const { dyslexiaAwareness } = links;
 
 /**
@@ -37,26 +35,5 @@ export const certificationItems: Certification[] = [
         date: "2025-09-05",
         image: "/img/badges/dyslexia-awareness-badge.svg",
         verification: dyslexiaAwareness,
-    },
-    {
-        title: "Certificate in Teaching English to Speakers of Other Languages (CELTA)",
-        body: "University of Cambridge",
-        date: "2013-11-22",
-        image: "/img/badges/cambridge-badge.png",
-        verification: celtaCertificate,
-    },
-    {
-        title: "Preparing to Teach in the Lifelong Learning Sector (PTLLS) Level 4",
-        body: "City & Guilds",
-        date: "2012-08-29",
-        image: "/img/badges/city-and-guilds-badge.png",
-        verification: ptllsCertificate,
-    },
-    {
-        title: "Apple Teacher with Swift Playgrounds",
-        body: "Apple",
-        date: "2025-06-06",
-        image: "/img/badges/apple-teacher-swift-playgrounds-badge.png",
-        verification: appleTeacherCertificate,
     },
 ];
