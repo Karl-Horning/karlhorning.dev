@@ -37,7 +37,7 @@ export const HighlightIcons: Icon[] = [
     },
     {
         title: "EdTech expertise",
-        description: "LMS evaluation & adoption across HE settings.",
+        description: "LTI/SCORM integrations, institutional APIs, and HE-scale deployment.",
         icon: HigherEducationIcon,
         bgColour: "bg-purple-800/10 dark:bg-purple-800",
         mainColour: "text-purple-800 dark:text-white",

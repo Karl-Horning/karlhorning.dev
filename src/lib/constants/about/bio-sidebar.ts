@@ -1,8 +1,7 @@
 import { icons } from "@/lib/constants/ui";
 import { Icon } from "@/types";
 
-const { AccessibilityIcon, CodeIcon, HigherEducationIcon, LocationIcon } =
-    icons;
+const { AccessibilityIcon, CodeIcon, LocationIcon } = icons;
 
 /**
  * Sidebar items used in the biography section.
@@ -21,13 +20,6 @@ export const bioSidebarItems: Icon[] = [
         title: "Location",
         description: "London & Portugal (remote/hybrid)",
         icon: LocationIcon,
-        mainColour: "text-secondary dark:text-white",
-        bgColour: "bg-blue-600/10 dark:bg-secondary",
-    },
-    {
-        title: "Sectors",
-        description: "HE & EdTech",
-        icon: HigherEducationIcon,
         mainColour: "text-secondary dark:text-white",
         bgColour: "bg-blue-600/10 dark:bg-secondary",
     },
