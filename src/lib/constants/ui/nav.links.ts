@@ -10,7 +10,6 @@ import { internalRoutes } from "./internal.routes";
 export const navLinks = [
     { label: "About", href: internalRoutes.AboutRoute },
     { label: "Blog", href: internalRoutes.BlogRoute },
-    { label: "CMALT", href: internalRoutes.CmaltRoute },
     { label: "Projects", href: internalRoutes.ProjectsRoute },
     { label: "Demos", href: internalRoutes.DemosRoute },
     { label: "Contact", href: internalRoutes.ContactRoute },
