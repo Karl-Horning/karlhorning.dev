@@ -13,32 +13,27 @@ export default function BioText() {
         <article className="md:col-span-2">
             <div className="prose max-w-prose text-slate-700 dark:text-slate-300">
                 <p className="mb-4">
-                    Hi, I&apos;m Karl, a developer and learning technologist
-                    from the UK.
+                    Hi, I&apos;m Karl, a software engineer from the UK.
                 </p>
                 <p className="mb-4">
-                    I love solving real-world problems through code, especially
-                    when it involves working with APIs, data, or accessible web
-                    interfaces. I&apos;m also excited about making learning
-                    experiences more inclusive and effective, whether that means
-                    selecting the right Learning Management System (LMS) or
-                    enhancing the introduction of digital tools to staff and
-                    students.
+                    I specialise in full-stack JavaScript and TypeScript —
+                    building REST APIs, working with relational databases, and
+                    shipping accessible web interfaces. Performance,
+                    maintainability, and a11y aren&apos;t afterthoughts; they&apos;re
+                    how I approach every project.
                 </p>
                 <p className="mb-4">
-                    My work spans both education and tech. I&apos;ve built
-                    full-stack projects using JavaScript, Node.js, Next.js, and
-                    PostgreSQL, and I&apos;ve helped universities make strategic
-                    decisions around learning technology. I enjoy switching
-                    between writing code and designing practical solutions that
-                    support people.
+                    I&apos;ve built production projects with Node.js, Next.js,
+                    React, and PostgreSQL, and I&apos;ve spent several years
+                    working inside higher education institutions. That means I
+                    bring genuine domain expertise in EdTech — I understand the
+                    problems, not just the technology.
                 </p>
                 <p className="mb-4">
-                    Right now, I&apos;m working on a few side projects,
-                    including an image optimiser built with Electron and Vite,
-                    and a Markdown-based writing tracker inspired by the
-                    &quot;200 words a day&quot; method. I&apos;m always learning
-                    and always building.
+                    Right now I&apos;m building a public REST API for a
+                    disability-friendly employers directory: FastAPI on AWS
+                    Lambda, PostgreSQL with full-text search, Redis caching, and
+                    Row Level Security. I&apos;m always working on something.
                 </p>
                 <p className="mb-4">
                     When I&apos;m not coding, I&apos;m writing, running, or

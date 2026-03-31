@@ -68,7 +68,7 @@ export default function About() {
             <PageIntroSplit
                 title="About Me"
                 tagline="Background & Values"
-                leadParagraph="Learning technologist and developer passionate about building accessible, meaningful digital experiences. I combine educational insight with technical practice to improve how people learn and work."
+                leadParagraph="Software engineer specialising in full-stack TypeScript and accessible web applications. I build practical, performant products and bring deep domain expertise in EdTech and digital education."
                 heroIcon={<InfoIcon />}
                 primaryCta={{
                     href: `${ProjectsRoute}`,
