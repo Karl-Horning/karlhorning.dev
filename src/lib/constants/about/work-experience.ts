@@ -11,7 +11,7 @@ import { WorkExperience } from "@/types";
  */
 export const workExperience: WorkExperience[] = [
     {
-        dates: "2022 — Present",
+        dates: "2024 — Present",
         jobTitle: "Learning Technologist",
         employer: "Imperial College London",
         location: "Hybrid/London, UK",

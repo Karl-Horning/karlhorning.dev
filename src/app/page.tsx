@@ -20,7 +20,7 @@ export default function Home() {
             <Hero
                 title="Building accessible products for real people"
                 leadParagraph="I ship practical, human-centred solutions with performance and a11y in mind."
-                tagline="Full-Stack JavaScript & EdTech"
+                tagline="Full-Stack TypeScript & JavaScript"
             />
             <Highlights />
             <Skills />
