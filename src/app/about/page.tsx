@@ -4,7 +4,6 @@ import { jsonLdAbout } from "@/lib/constants/site-metadata";
 import Bio from "@/components/about/Bio";
 import Values from "@/components/about/Values";
 import Experience from "@/components/about/Experience";
-import Platforms from "@/components/about/Platforms";
 import ContactCta from "@/components/ui/ContactCta";
 import Certifications from "@/components/about/Certifications";
 import PageIntroSplit from "@/components/ui/PageIntroSplit";
@@ -37,8 +36,7 @@ export const metadata = createMetadata({
  * - {@link Bio} — Concise biography and visual profile card.
  * - {@link Values} — Grid or list describing professional values.
  * - {@link Experience} — Overview of relevant career or project experience.
- * - {@link Platforms} — Technologies and systems used in academic and technical work.
- * - {@link Certifications} — Professional credentials and recognitions.
+ *- {@link Certifications} — Professional credentials and recognitions.
  * - {@link ContactCta} — Footer contact prompt encouraging further engagement.
  *
  * ### Behaviour
@@ -85,7 +83,6 @@ export default function About() {
             <Bio />
             <Values />
             <Experience />
-            <Platforms />
             <Certifications />
             <ContactCta />
         </>
