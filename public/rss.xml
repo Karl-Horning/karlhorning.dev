@@ -10,7 +10,7 @@
     <description>Notes on web development, accessibility, and learning tech</description>
     <language>en-GB</language>
     <generator>build-rss-from-posts.ts</generator>
-    <lastBuildDate>Wed, 22 Oct 2025 19:10:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 22:36:32 +0000</lastBuildDate>
     <atom:link href="https://www.karlhorning.dev/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Accessibility Resources and Tools: Guidelines, Checklists, and Testing Solutions</title>
@@ -39,18 +39,18 @@
       <guid isPermaLink="true">https://www.karlhorning.dev/blog/setting-up-prettier-with-tailwind-css-in-a-react-project</guid>
     </item>
     <item>
-      <title>Using Blackboard&apos;s Swagger File to Create a Postman Collection and Make an API Call</title>
-      <link>https://www.karlhorning.dev/blog/using-blackboards-swagger-file-to-create-a-postman-collection-and-make-an-api-call</link>
+      <title>Testing LMS APIs: What an OpenAPI Spec Gives You (and What It Doesn&apos;t)</title>
+      <link>https://www.karlhorning.dev/blog/testing-lms-apis</link>
       <pubDate>2025-07-11T18:31:00Z</pubDate>
-      <description><![CDATA[<img src="https://www.karlhorning.dev/img/blog/postman_blackboard.webp" alt="The Postman and Blackboard Learn logos" /><br>This beginner-friendly tutorial walks you through importing Blackboard's Learn API into Postman, setting up OAuth2 authentication, and making a test request using client credentials.]]></description>
-      <category>Blackboard</category>
-      <category>Postman</category>
+      <description><![CDATA[<img src="https://www.karlhorning.dev/img/blog/testing_lms_apis.webp" alt="The Postman and Blackboard Learn logos" /><br>What I learned building a reusable Postman testing framework across three LMS APIs — and how Blackboard, Canvas, and Brightspace each presented different challenges.]]></description>
       <category>API</category>
-      <category>Swagger</category>
+      <category>OpenAPI</category>
+      <category>Postman</category>
       <category>OAuth2</category>
-      <category>EdTech</category>
-      <media:thumbnail url="https://www.karlhorning.dev/img/blog/postman_blackboard.webp" />
-      <guid isPermaLink="true">https://www.karlhorning.dev/blog/using-blackboards-swagger-file-to-create-a-postman-collection-and-make-an-api-call</guid>
+      <category>testing</category>
+      <category>LMS</category>
+      <media:thumbnail url="https://www.karlhorning.dev/img/blog/testing_lms_apis.webp" />
+      <guid isPermaLink="true">https://www.karlhorning.dev/blog/testing-lms-apis</guid>
     </item>
     <item>
       <title>Testing, Testing</title>
