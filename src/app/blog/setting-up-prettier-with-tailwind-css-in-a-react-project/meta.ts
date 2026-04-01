@@ -2,9 +2,9 @@ import type { BlogMeta } from "@/types";
 import "server-only";
 
 export const meta = {
-    title: "Setting Up Prettier with Tailwind CSS in a React Project (Without Forgetting Next Time)",
+    title: "Setting Up Prettier with Tailwind CSS in a React Project",
     description:
-        "A quick walkthrough for setting up Prettier with Tailwind CSS in a new React project using either Next.js or Vite. Written mainly as a reminder to myself — but hopefully useful for others too.",
+        "The setup I use at the start of every React project — Prettier with Tailwind CSS class sorting, for both Next.js and Vite.",
     date: "2025-08-04T16:03:00Z",
     readingTime: 4,
     slug: "setting-up-prettier-with-tailwind-css-in-a-react-project",
