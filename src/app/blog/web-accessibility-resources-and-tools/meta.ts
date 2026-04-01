@@ -4,7 +4,7 @@ import "server-only";
 export const meta = {
     title: "Web Accessibility Resources and Tools: Guidelines, Checklists, and Testing Solutions",
     description:
-        "A curated guide to web accessibility resources, tools, and checklists — including WCAG guidelines, free testing tools, and practical articles for developers and designers.",
+        "A reference list of web accessibility tools, guidelines, and articles — with starred items for quick starting points.",
     date: "2025-10-22T20:10:00Z",
     readingTime: 7,
     slug: "web-accessibility-resources-and-tools",
