@@ -5,7 +5,7 @@ export const meta = {
     title: "Testing My Portfolio for Accessibility: What axe-core Found (and What It Didn't)",
     description:
         "What happened when I added Playwright and axe-core to my portfolio site — the structural issues that surfaced, how I fixed them, and what automated testing still missed.",
-    date: "2026-04-01T00:00:00Z",
+    date: "2026-04-01T10:22:00Z",
     readingTime: 6,
     slug: "testing-portfolio-accessibility",
     thumbnail: {
