@@ -20,7 +20,7 @@ export const seo = {
 
     /** Default description used for meta tags and structured data */
     defaultDescription:
-        "Self-taught Full-Stack JavaScript and TypeScript developer and Learning Technologist with over 15 years of cross-sector experience, specialising in scalable APIs, LMS platforms, and educational technology.",
+        "Software engineer specialising in full-stack TypeScript and JavaScript — REST APIs, accessible web applications, and production systems with deep domain expertise in EdTech.",
 
     /** Default Open Graph or social sharing image */
     defaultImage: `${PortfolioLink}${assets.profileImage}`, // TODO: Update with a dedicated OG image
@@ -30,7 +30,7 @@ export const seo = {
 
     /** Default job titles for use in metadata and structured data */
     defaultJobTitle: [
+        "Software Engineer",
         "Full-Stack JavaScript & TypeScript Developer",
-        "Learning Technologist",
     ],
 };

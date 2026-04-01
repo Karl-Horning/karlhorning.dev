@@ -44,7 +44,7 @@ export default function AuthorCard() {
                 <div>
                     <p className="font-semibold">Karl Horning</p>
                     <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-                        Full-stack JS/TS developer & learning technologist. I
+                        Full-stack JS/TS developer — I
                         build accessible, pragmatic tools.
                     </p>
                     <div className="mt-3 flex flex-wrap gap-2">
