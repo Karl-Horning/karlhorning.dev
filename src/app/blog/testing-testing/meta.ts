@@ -13,5 +13,5 @@ export const meta = {
         alt: "Graffiti of a monkey wearing sunglasses (placeholder image)",
     },
     topics: ["meta", "blog", "testing"],
-    draft: false,
+    draft: true,
 } as const satisfies BlogMeta;

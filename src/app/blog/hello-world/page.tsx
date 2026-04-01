@@ -14,59 +14,38 @@ export default function Page() {
     return (
         <BlogLayout {...meta}>
             <p>
-                Welcome to my blog! I&apos;m calling this the &quot;first
-                post&quot;, but really, it&apos;s a placeholder — something to
-                test layouts and that lovely moment when a blank site becomes
-                something more than a skeleton.
+                Welcome to the blog. The convention demands a Hello, World — so
+                here it is.
             </p>
-
-            <p>That said, I thought I&apos;d make it useful.</p>
-
             <p>
-                This site is my digital notebook, portfolio, and playground.
-                Expect a mix of topics — from thoughts on learning technology
-                and software development, to accessibility, to side projects
-                that may or may not get finished (but are fun to build anyway).
+                This is where I write about things I&apos;ve learned, problems
+                I&apos;ve worked through, and decisions I&apos;ve had to make as
+                a developer. I write publicly because the same challenges tend
+                to come up for other people too, and experience is more useful
+                when it&apos;s shared.
             </p>
-
-            <p>
-                I&apos;m building the blog with{" "}
-                <a href="https://www.11ty.dev/" target="_blank" rel="noopener">
-                    Eleventy (11ty)
-                </a>
-                , a lightweight static site generator. It&apos;s fast, flexible,
-                and — once you get the hang of it — satisfying to work with.
-                I&apos;ve paired it with Tailwind CSS to keep things clean and
-                responsive.
-            </p>
-
-            <p>
-                If you&apos;ve stumbled across this while everything&apos;s
-                still under construction, thanks for your patience! And if
-                you&apos;re here on purpose: welcome. I hope you find something
-                interesting!
-            </p>
-
-            <hr />
-
+            <p>The three areas I keep coming back to:</p>
             <ul>
                 <li>
-                    <strong>Built with</strong>: Eleventy, Tailwind CSS,
-                    GitHub Pages
+                    <strong>Accessibility</strong> — building things that work
+                    for everyone, not as an afterthought
                 </li>
                 <li>
-                    <strong>Currently testing</strong>: Layouts, dark mode,
-                    mobile nav
+                    <strong>Architecture</strong> — how systems are structured,
+                    why certain decisions get made, and what the trade-offs look
+                    like in practice
                 </li>
                 <li>
-                    <strong>Currently drinking</strong>: Water 😥
+                    <strong>Lessons from development</strong> — honest write-ups
+                    of what I built, what I found, and what I&apos;d do
+                    differently
                 </li>
             </ul>
-
-            <hr />
-
-            <p>Stay tuned.</p>
-
+            <p>
+                Posts here are practical rather than theoretical. If something
+                is worth writing about, it&apos;s because I ran into it, worked
+                through it, and think the experience is worth documenting.
+            </p>
             <p>— Karl</p>
         </BlogLayout>
     );

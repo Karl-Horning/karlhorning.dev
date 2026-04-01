@@ -4,7 +4,7 @@ import "server-only";
 export const meta = {
     title: "Hello, World!",
     description:
-        "A quick introduction to the blog: what it's for, what I might write about, and why I'm building it in the first place.",
+        "An introduction to the blog and what it covers: accessibility, architecture, and lessons from real development work.",
     date: "2025-06-22T22:33:00Z",
     readingTime: 2,
     slug: "hello-world",
