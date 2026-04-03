@@ -6,6 +6,7 @@ import HamburgerIcon from "@/components/shell/HamburgerIcon";
 interface MobileToggleButtonProps {
     isOpen: boolean;
     onToggle: () => void;
+    "aria-label"?: string;
 }
 
 /**
@@ -18,13 +19,14 @@ interface MobileToggleButtonProps {
 export default function MobileToggleButton({
     isOpen,
     onToggle,
+    "aria-label": ariaLabel,
 }: MobileToggleButtonProps) {
     return (
         <div className="md:hidden">
             <button
                 id="menu-btn"
                 className="rounded text-slate-600 dark:text-slate-400"
-                aria-label="Toggle menu"
+                aria-label={ariaLabel ?? (isOpen ? "Close menu" : "Open menu")}
                 aria-controls="mobile-menu"
                 aria-expanded={isOpen}
                 aria-haspopup="true"

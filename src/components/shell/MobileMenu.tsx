@@ -38,9 +38,9 @@ export default function MobileMenu({
     }, [isOpen]);
 
     return (
-        <section
+        <nav
             id="mobile-menu"
-            aria-label="Mobile"
+            aria-label="Mobile navigation"
             className={`glass absolute left-0 top-16 z-10 w-full overflow-hidden border-b border-slate-200/70 bg-white/80 shadow-md transition-[max-height] duration-500 ease-in-out md:hidden dark:border-slate-800 dark:bg-slate-950/70 ${
                 isOpen
                     ? "pointer-events-auto max-h-screen"
@@ -67,6 +67,6 @@ export default function MobileMenu({
                     </Link>
                 ))}
             </div>
-        </section>
+        </nav>
     );
 }
