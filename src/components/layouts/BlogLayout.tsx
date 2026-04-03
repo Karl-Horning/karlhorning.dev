@@ -67,7 +67,7 @@ export default async function BlogLayout({
     const { previous, next } = await getPrevNextBlogPost(slug);
 
     return (
-        <main id="main">
+        <div>
             <EntryHeader
                 title={title}
                 description={description}
@@ -101,6 +101,6 @@ export default async function BlogLayout({
                 title="Enjoyed this post?"
                 description="I'm available for freelance work and consultancy in EdTech and full-stack development."
             />
-        </main>
+        </div>
     );
 }
