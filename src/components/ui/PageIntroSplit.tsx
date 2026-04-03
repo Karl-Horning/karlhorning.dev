@@ -125,7 +125,6 @@ export default function PageIntroSplit({
             {tagline && (
                 <span
                     className="flex items-center justify-center gap-2 text-sm font-semibold uppercase tracking-wide text-primary md:justify-start dark:text-pink-500"
-                    aria-hidden="true"
                 >
                     {/* Small decorative icon appears only on mobile */}
                     <span

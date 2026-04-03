@@ -55,7 +55,6 @@ export default function Hero({ title, leadParagraph, tagline }: HeroProps) {
                     {tagline && (
                         <span
                             className="text-sm font-semibold uppercase text-primary dark:text-pink-500"
-                            aria-hidden="true"
                         >
                             {tagline}
                         </span>

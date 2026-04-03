@@ -5,7 +5,6 @@ import { icons } from "@/lib/constants/ui";
 import ButtonLink from "@/components/ui/ButtonLink";
 import { decorateIcon } from "@/lib/helpers";
 import TopicChipsList from "@/components/ui/TopicChipsList";
-import Link from "next/link";
 
 const { BlogRoute } = internalRoutes;
 const { CalendarIcon, ClockIcon, ReadMoreIcon } = icons;
@@ -55,9 +54,7 @@ export default function BlogCard({
                     height={200}
                 />
 
-                <Link href={`${BlogRoute}/${slug}`}>
-                    <h2 className="mt-3 text-2xl font-bold">{title}</h2>
-                </Link>
+                <h2 className="mt-3 text-2xl font-bold">{title}</h2>
 
                 <p className="mt-3 flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
                     {decorateIcon(<CalendarIcon />)}
