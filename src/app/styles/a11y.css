@@ -4,14 +4,14 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    /* Target elements with transition classes */
+    /* Target elements with transition classes (including arbitrary values e.g. transition-[max-height]) */
     .transition-transform,
     .transition,
     .transition-all,
     .transition-opacity,
     .transition-colors,
     .transition-shadow,
-    .transition-transform {
+    [class*="transition-["] {
         transition-property: none !important;
         transition-duration: 0s !important;
         transition-timing-function: linear !important;
