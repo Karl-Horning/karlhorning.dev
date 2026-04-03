@@ -69,56 +69,74 @@ export default function PrevNextButtons({
     const prevDisabled = !previous?.href;
     const nextDisabled = !next?.href;
 
+    const PrevInner = (
+        <>
+            <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                {decorateIcon(<PreviousIcon />)}
+            </span>
+            <div>
+                <span className="text-xs text-slate-500 dark:text-slate-300">
+                    Previous {itemType}
+                </span>
+                <p className="font-semibold">
+                    {previous?.href ? previous.title : "—"}
+                </p>
+            </div>
+        </>
+    );
+
+    const NextInner = (
+        <>
+            <div className="ml-auto text-right">
+                <span className="block text-xs text-slate-500 dark:text-slate-300">
+                    Next {itemType}
+                </span>
+                <p className="font-semibold">
+                    {next?.href ? next.title : "—"}
+                </p>
+            </div>
+            <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
+                {decorateIcon(<NextIcon />)}
+            </span>
+        </>
+    );
+
     return (
         <nav
             className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2"
             aria-label={`${contextTitle} pagination`}
         >
             {/* Previous */}
-            <a
-                className={`${base} ${prevDisabled ? disabledClasses : ""}`}
-                href={prevDisabled ? undefined : previous.href}
-                aria-label={`Previous ${itemType}`}
-                aria-disabled={prevDisabled || undefined}
-                role={prevDisabled ? "link" : undefined}
-                tabIndex={prevDisabled ? -1 : undefined}
-                rel={!prevDisabled ? "prev" : undefined}
-            >
-                <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                    {decorateIcon(<PreviousIcon />)}
+            {prevDisabled ? (
+                <span className={`${base} ${disabledClasses}`} aria-disabled="true">
+                    {PrevInner}
                 </span>
-                <div>
-                    <span className="text-xs text-slate-500 dark:text-slate-300">
-                        Previous {itemType}
-                    </span>
-                    <p className="font-semibold">
-                        {previous?.href ? previous.title : "—"}
-                    </p>
-                </div>
-            </a>
+            ) : (
+                <a
+                    className={base}
+                    href={previous.href}
+                    aria-label={`Previous ${itemType}: ${previous.title}`}
+                    rel="prev"
+                >
+                    {PrevInner}
+                </a>
+            )}
 
             {/* Next */}
-            <a
-                className={`${base} ${nextDisabled ? disabledClasses : ""}`}
-                href={nextDisabled ? undefined : next.href}
-                aria-label={`Next ${itemType}`}
-                aria-disabled={nextDisabled || undefined}
-                role={nextDisabled ? "link" : undefined}
-                tabIndex={nextDisabled ? -1 : undefined}
-                rel={!nextDisabled ? "next" : undefined}
-            >
-                <div className="ml-auto text-right">
-                    <span className="block text-xs text-slate-500 dark:text-slate-300">
-                        Next {itemType}
-                    </span>
-                    <p className="font-semibold">
-                        {next?.href ? next.title : "—"}
-                    </p>
-                </div>
-                <span className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-200">
-                    {decorateIcon(<NextIcon />)}
+            {nextDisabled ? (
+                <span className={`${base} ${disabledClasses}`} aria-disabled="true">
+                    {NextInner}
                 </span>
-            </a>
+            ) : (
+                <a
+                    className={base}
+                    href={next.href}
+                    aria-label={`Next ${itemType}: ${next.title}`}
+                    rel="next"
+                >
+                    {NextInner}
+                </a>
+            )}
         </nav>
     );
 }
