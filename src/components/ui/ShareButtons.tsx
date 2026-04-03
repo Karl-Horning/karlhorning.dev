@@ -26,7 +26,7 @@ interface ShareButtonsProps {
  */
 export default function ShareButtons({ slug }: ShareButtonsProps) {
     return (
-        <section className="flex flex-wrap items-center gap-3">
+        <section className="flex flex-wrap items-center gap-3" aria-label="Share this page">
             <span className="text-sm text-slate-600 dark:text-slate-400">
                 Share:
             </span>
@@ -36,6 +36,7 @@ export default function ShareButtons({ slug }: ShareButtonsProps) {
                 target="_blank"
                 rel="noreferrer"
                 id="shareTwitter"
+                aria-label="Post to X"
             >
                 {decorateIcon(<XIcon className="mr-1" />)}
                 Post
@@ -46,6 +47,7 @@ export default function ShareButtons({ slug }: ShareButtonsProps) {
                 target="_blank"
                 rel="noreferrer"
                 id="shareLinkedIn"
+                aria-label="Share on LinkedIn"
             >
                 {decorateIcon(<LinkedInIcon className="mr-1" />)}
                 Share
