@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 export type ButtonType = "primary" | "secondary";
 
 const base =
-    "rounded-full px-5 py-2.5 text-sm font-semibold transition-colors duration-300";
+    "rounded-full px-5 py-2.5 text-sm font-semibold transition-colors duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2";
 
 const variants: Record<ButtonType, string> = {
     primary: "bg-primary text-white shadow-sm hover:brightness-105",
