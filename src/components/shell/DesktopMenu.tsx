@@ -9,7 +9,7 @@ import { navLinks } from "@/lib/constants/ui";
  */
 export default function DesktopMenu() {
     return (
-        <section id="desktop-menu" className="hidden items-center gap-3 md:flex">
+        <nav id="desktop-menu" aria-label="Desktop navigation" className="hidden items-center gap-3 md:flex">
             {navLinks.map(({ label, href }) => (
                 <Link
                     key={label}
@@ -19,6 +19,6 @@ export default function DesktopMenu() {
                     {label}
                 </Link>
             ))}
-        </section>
+        </nav>
     );
 }
