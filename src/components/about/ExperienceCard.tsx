@@ -88,7 +88,7 @@ export default function ExperienceCard({
         <li className="grid items-center gap-4 p-4 md:grid-cols-[auto_1fr_auto]">
             <Image
                 src={image}
-                alt={`${employer}, ${location}`}
+                alt=""
                 height={160}
                 width={160}
                 className="order-1 h-16 w-16 rounded-lg object-contain p-1"
