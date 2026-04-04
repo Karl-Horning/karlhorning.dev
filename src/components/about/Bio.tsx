@@ -11,7 +11,7 @@ import BioText from "./BioText";
  *
  * @returns The biography section containing text and sidebar components.
  */
-export default function bio() {
+export default function Bio() {
     return (
         <section className="mx-auto max-w-6xl px-4 pt-20">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
