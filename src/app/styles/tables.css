@@ -26,15 +26,17 @@
     border-bottom: 1px solid rgba(148, 163, 184, 0.3);
 }
 
-.dark .table-wrap thead th {
-    background: rgba(203, 45, 111, 0.25);
-}
+@media (prefers-color-scheme: dark) {
+    .table-wrap thead th {
+        background: rgba(203, 45, 111, 0.25);
+    }
 
-.dark .table-wrap tbody tr:nth-child(even) {
-    background: rgba(76, 157, 205, 0.1);
-}
+    .table-wrap tbody tr:nth-child(even) {
+        background: rgba(76, 157, 205, 0.1);
+    }
 
-.dark .table-wrap td,
-.dark .table-wrap th {
-    border-color: rgba(100, 116, 139, 0.5);
+    .table-wrap td,
+    .table-wrap th {
+        border-color: rgba(100, 116, 139, 0.5);
+    }
 }
