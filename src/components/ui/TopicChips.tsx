@@ -43,7 +43,7 @@ export default function TopicChips({
         >
             <Link
                 href={link}
-                className="rounded-full bg-blue-300/10 px-3 py-1 text-blue-700 transition hover:bg-blue-400/10 dark:bg-blue-200/10 dark:text-secondary dark:hover:bg-blue-200/20"
+                className="rounded-full bg-blue-300/10 px-3 py-1 text-blue-700 transition hover:bg-blue-400/10 dark:bg-blue-200/10 dark:text-sky-300 dark:hover:bg-blue-200/20"
             >
                 #{title}
             </Link>
