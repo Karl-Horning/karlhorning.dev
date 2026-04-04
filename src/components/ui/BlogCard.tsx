@@ -65,7 +65,7 @@ export default function BlogCard({
                             year: "numeric",
                         })}
                     </time>
-                    <span className="mx-2">|</span>
+                    <span className="mx-2" aria-hidden="true">|</span>
                     {decorateIcon(<ClockIcon />)} {readingTime} min read
                 </p>
 
@@ -79,7 +79,7 @@ export default function BlogCard({
                 <hr className="mt-6 border-slate-100 dark:border-slate-800" />
 
                 <footer>
-                    <div className="mt-6 flex flex-col md:float-right md:flex-row">
+                    <div className="mt-6 flex flex-col md:flex-row md:justify-end">
                         <ButtonLink
                             href={`${BlogRoute}/${slug}`}
                             text={

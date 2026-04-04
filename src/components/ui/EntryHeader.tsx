@@ -114,7 +114,7 @@ export default function EntryHeader({
                             })}
                         </time>
                     )}
-                    <span className="mx-2">|</span>
+                    <span className="mx-2" aria-hidden="true">|</span>
                     {decorateIcon(<ClockIcon />)} {readingTime} min read
                 </p>
 

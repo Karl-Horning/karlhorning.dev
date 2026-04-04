@@ -24,7 +24,7 @@ export default async function Projects() {
 
     return (
         <section id="myProjects" className="mx-auto max-w-6xl px-4 pt-20">
-            <div className="flex items-center justify-between gap-6 pb-[-5rem]">
+            <div className="flex items-center justify-between gap-6">
                 <h2 className="text-2xl font-bold tracking-tight">
                     My projects
                 </h2>

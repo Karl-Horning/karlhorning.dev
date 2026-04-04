@@ -16,14 +16,13 @@ const config: Config = {
             },
             fontFamily: {
                 sans: ["Inter", "sans-serif"],
-                heading: ["Poppins", "sans-serif"],
                 glitch: ['"Rubik Glitch"', "cursive"],
             },
             colors: {
                 black: "#2d292d",
                 "custom-red": "#da4453",
                 primary: "#cb2d6f", // vibrant pink/red
-                secondary: "var(--secondary)", //"#4C9DCD", // #3c7da4
+                secondary: "#3c7da4", // light: #3c7da4, dark: #4c9dcd (via CSS var --secondary)
                 navy: "#163753",
                 accent: "#14a098", // teal accent
                 highlight: "#148aad", // teal for emphasis
