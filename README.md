@@ -1,5 +1,7 @@
 # KarlHorning.dev — Developer portfolio
 
+> **Archived.** This repository is the previous version of my portfolio site, now replaced by [karlhorning.dev](https://github.com/Karl-Horning/karlhorning.dev). It is kept here as a historical reference only; no further changes are planned.
+
 ![GitHub Pages Deploy](https://img.shields.io/github/deployments/Karl-Horning/Karl-Horning.github.io/github-pages?label=GitHub%20Pages\&logo=github)
 ![Lighthouse Performance 99](https://img.shields.io/badge/Lighthouse_Performance-99-brightgreen)
 ![Lighthouse Accessibility 100](https://img.shields.io/badge/Lighthouse_Accessibility-100-brightgreen)
